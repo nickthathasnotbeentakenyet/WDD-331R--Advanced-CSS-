@@ -1,0 +1,1 @@
+#NOTE: Working on grid gallery MAKE SURE to resize all images to one size [500px]

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap");
+
+:root {
+    --mono: "MONO" 1;
+    --casl: "CASL" 1;
+    --wght: "wght" 800;
+    --CRSV: "CRSV" 0.5;
+    --maincolor: darkgray;
+  }
+  * {
+    font-variation-settings: var(--mono), var(--casl), var(--wght), var(--crsv);
+  }
+  
+  body {
+    font-family: Recursive, sans-serif;
+    font-size: x-large;
+    margin-left: 10em;
+    background-color: rgb(231, 231, 231);
+  }
+  p, .alert-note{
+    text-overflow: ellipsis;
+    text-align: justify;
+    white-space: wrap;
+    max-width: 95%;
+  }
+  .alert-note{
+      display: flex;
+  }
+  .alert-note p:first-of-type{
+      font-variation-settings: var(--casl);
+      font-size: x-large;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      height: 3em;
+      padding: .2em;
+      text-align: center;
+      border: 20px solid var(--maincolor);
+      border-radius: 50%;
+      margin-right: .5em;
+  }
+  .alert-note p:nth-of-type(2){
+      border-left: 5px solid var(--maincolor);
+      padding-left: .5em;
+      font-variation-settings: var(--mono);
+  }
+  .bold{
+      font-variation-settings: var(--wght);
+  }
+  .caps{
+      text-transform: uppercase;
+  }
+  .mono{
+      font-variation-settings: var(--mono);
+      font-size: smaller;
+  }
+  .chapter{
+      border-bottom: 3px dotted var(--maincolor);
+  }
